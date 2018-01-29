@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*header开始*/
+#header{
+    height: 100px;
+    display:-webkit-box;
+}
+#list{
+   -webkit-box-flex: 5;
+    padding: 0 15px;
+}
+#list input{
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+}
+#list span{
+    display: block;
+    width: 40px;
+    height: 25px;
+   text-align: center;
+    font-size: 14px;
+}
+#brand {
+    -webkit-box-flex: 2;
+
+}
+#brand img{
+    width: 73px;
+    max-width: 100%;
+
+}
+#register{
+   -webkit-box-flex: 5;
+
+    padding: 0 15px;
+}
+#register p{
+    text-align: right;
+    font-size: 16px;
+}
+/*header结束*/
+/*banner开始*/
+#banner{
+    background: url("img/banner.jpg")  no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 0;
+    padding-top: 50%;
+    margin-top: 0;
+}
+/*banner结束*/
+/*home-reward开始*/
+#home-reward{
+    width: 100%;
+    height: 220px;
+    background: #0f0f0f;
+    margin: 0;
+}
+#container{
+    width: 750px;
+    margin:0 auto;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+
+}
+#container p{
+    color:white;
+}
+#container .rewards-mask{
+    width: 260px;
+    height: 220px;
+    background: url("img/rewards_bg%20.png") 0 0 no-repeat #0f0f0f;
+    background-size: contain;
+
+}
+#container .rewards-content{
+    width: 430px;
+    height: 220px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rewards-mask .mask-card{
+    font-size: 20px;
+    margin-top:80px;
+
+}
+.rewards-mask .mask-logo{
+    width: 160px;
+    height: 38px;
+    background:#0f0f0f url("img/rewards_logo.svg") 0 0 no-repeat;
+
+}
+#container .content-pub{
+    font-size: 25px;
+}
+#container .content-star{
+    font-size: 16px;
+    margin:0 0 5px;
+}
+#container .content-link a:not(.understand-more){
+    /*行级元素一旦浮动或定位，就可以设置宽高*/
+    float:left;
+    width: 114px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color:#a98e67;
+    font-size: 14px;
+    border:2px solid #a98e67;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#container .content-link a:nth-child(2){
+    margin:0 40px 0 15px;
+}
+#container .content-link a:nth-child(3){
+   text-decoration: none;
+    color: #a98e67;
+    font-size: 14px;
+}
+/*home-reward结束*/
+/*app开始*/
+#app{
+    position:relative;
+}
+#app img{
+    width: 100%;
+    display: block;
+}
+#app .code{
+    width: 130px;
+    height: 130px;
+    background:url("img/app_qr.png") 0 0 no-repeat;
+    background-size: contain;
+    position: absolute;
+    top:25%;
+    left:42%;
+}
+@media screen and (max-width: 991px){
+    #banner{
+        background-image: url("img/banner2.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 0;
+        padding-top: 117%;
+    }
+}
+@media screen and (max-width: 767px){
+    #home-reward{
+       height: auto;
+    }
+    #container{
+        width: 100%;
+        -webkit-flex-direction: column;
+        padding-left: 35px;
+        padding-right: 35px;
+        box-sizing: border-box;
+    }
+    #container .rewards-mask,#container .rewards-content{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+    .rewards-mask .mask-logo{
+        margin: 0 auto;
+    }
+    .rewards-mask .mask-card{
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+    #container .rewards-content{
+        padding: 0;
+    }
+    .rewards-content p{
+        text-align: center;
+    }
+    #container .content-pub {
+        font-size: 25px;
+    }
+    #container .content-star{
+        font-size: 18px;
+        margin:15px 0 20px;
+    }
+    #container .rewards-content .content-link a{
+        float:none;
+        display: block;
+        width: 80%;
+        margin:10px auto;
+    }
+    .rewards-content .understand-more{
+        text-align: right;
+    }
+
+
+}
